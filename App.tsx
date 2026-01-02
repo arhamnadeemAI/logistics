@@ -461,7 +461,7 @@ const App: React.FC = () => {
                 <div>
                   <p className="text-[10px] font-bold uppercase tracking-tight opacity-70">Carrier Delay</p>
                   <p className="text-xl font-black">{stats.agingAlerts.pendingOver7Days}</p>
-                  <p className="text-[9px]">Awaiting pickup > 7d</p>
+                  <p className="text-[9px]">Awaiting pickup {'>'} 7d</p>
                 </div>
               </div>
               <div className={`p-4 rounded-lg border flex items-center space-x-4 ${stats.unassignedDeliveredCount > 10 ? 'bg-rose-50 border-rose-100 text-rose-700' : 'bg-slate-50 border-slate-100 text-slate-400'}`}>
